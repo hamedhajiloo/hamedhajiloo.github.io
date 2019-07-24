@@ -398,6 +398,7 @@ main {
 .portfolio-list li a {
   display: block;
   position: relative;
+  text-align: center;
 }
 
 .portfolio-list li a:before {
@@ -416,7 +417,7 @@ main {
 }
 
 .portfolio-list li a img {
-  max-width: 100%;
+  max-width: 200px;
 }
 
 .portfolio-list li a .text {
