@@ -1,84 +1,582 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Hamed Hajiloo</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="keywords" content="hamed , hajiloo , hamedhajiloo , hamed hajiloo , Programmer , MVC Developer , Microsoft , .Net Framework , Asp.net , حامد , حاجیلو ,حامد حاجیلو ,حامدحاجیلو , وفس , حامد حاجیلو وفس , vafs , برنامه نویس" />
-<meta name="description" content="Hamed Hajiloo | I am .Net Programmer" />
-<meta name="author" content="Hamed Hajiloo | hamedhajiloo.github.io" />
-<meta property="og:title" content="Hamed Hajiloo">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hamedhajiloo.github.io/">
+  <meta charset="utf-8">
+  <title>Hamed Hajiloo — Senior Software Engineer @ CrystaCode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Hamed Hajiloo, CrystaCode, Senior Software Engineer, .NET Developer, AI Systems, Semantic Kernel, BitPlatform, C# Engineer, Backend Architect, ASP.NET Core, Microservices, Blazor, حامد حاجیلو" />
+  <meta name="description" content="Personal website and portfolio of Hamed Hajiloo — Senior Software Engineer at CrystaCode, .NET Architect, and Full-Stack AI Developer." />
+  <meta name="author" content="Hamed Hajiloo" />
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Hamed Hajiloo — Senior Software Engineer @ CrystaCode">
+  <meta property="og:description" content="Senior Software Engineer at CrystaCode specializing in modern .NET systems, Full-Stack AI architectures, and scalable cloud applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamedhajiloo.github.io/">
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-<link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-<link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="css/style.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/modern.css">
+  
+  <!-- FontAwesome Icons for vector glyphs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<div class="site-wrap">
-<a href="#" class="offcanvas-toggle js-offcanvas-toggle btn btn-primary">Menu</a>
-<div class="offcanvas_menu" id="offcanvas_menu">
-<ul class="mb-5">
-<li class="active"><a href="index.html">Bio</a></li>
-<li><a href="portfolio.html">Portfolio</a></li>
-<li><a href="https://github.com/hamedhajiloo">Resume(in github)</a></li>
-<!-- <li><a href="contact.html">Contact</a></li> -->
-</ul>
-<ul class="social">
-  <li><a href="https://twitter.com/HamedHajiloo96"><img style="height: 25px; width: 25px;" src="img/twitter.png" /></a></li>
-  <li><a href="https://t.me/prog_ram_mer"><img style="height: 25px; width: 25px;" src="img/telegram.png"/></a></li>
-  <li><a href="https://instagram.com/hamedhajiloo96"><img style="height: 25px; width: 25px;" src="img/instagram.png"/></a></li>
-  
-</ul>
-</br>
 
-</div>
-<aside style="background-image: url(https://hamedhajiloo.github.io/img/Profile_big.jpg);"></aside>
-<main>
-<h1 class="mb-0">Hi, I'm Hamed Hajiloo</h1>
-<div class="mb-5">
-<p class="lead mb-3">Back-End (.Net)  Developer</p>
-Hi , I am Hamed Hajilo
-  Computer engineer, website designer, and developer .
-I'm getting experiences like multi-layer programming and so on .
-My vacation and rest time goes through the surf in the Microsoft world
-</div>
-<p>
-  <a href="https://twitter.com/HamedHajiloo96"><img style="height: 25px; width: 25px;" src="img/twitter.png" /></a>
-  &nbsp;
-  <a href="https://t.me/prog_ram_mer"><img style="height: 25px; width: 25px;" src="img/telegram.png" /></a>
-  &nbsp;
-  <a href="https://instagram.com/hamedhajiloo96"><img style="height: 25px; width: 25px;" src="img/instagram.png" /></a>
+  <!-- Interactive 3D WebGL Background -->
+  <canvas id="webgl-canvas"></canvas>
 
-</p>
+  <div class="app-container">
+    
+    <!-- Floating Glassmorphism Navigation -->
+    <header>
+      <nav class="navbar">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Hamed Hajiloo</span>
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-</div>
-</main>
-</div>
+        <div class="nav-actions">
+          <a href="https://www.linkedin.com/in/hamedhajiloo/" target="_blank" rel="noopener noreferrer" class="nav-cta nav-cta-linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/hamedhajiloo" target="_blank" rel="noopener noreferrer" class="nav-cta nav-cta-github">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-<div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214" /></svg></div>
-<script src="js/jquery-3.2.1.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/popper.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/bootstrap.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/owl.carousel.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/jquery.waypoints.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/jquery.countdown.min.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script src="js/main.js" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
+    <!-- Main Content -->
+    <main>
+      
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="badge-tag">
+          <span class="pulse-circle"></span>
+          <span>Senior Software Engineer @ CrystaCode</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Architecting Intelligent <br>
+          <span class="gradient-text">.NET & Full-Stack AI Systems</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Hi, I'm <strong>Hamed Hajiloo</strong>. Senior Software Engineer at <strong>CrystaCode</strong> dedicated to high-performance .NET architectures, Clean Architecture, intelligent AI integrations, and resilient cloud-native systems.
+        </p>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="0739c6dcd564e8d0897f3687-text/javascript"></script>
-<script type="0739c6dcd564e8d0897f3687-text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <div class="hero-actions">
+          <a href="https://www.linkedin.com/in/hamedhajiloo/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background: linear-gradient(135deg, #0a66c2 0%, #0077b5 100%);">
+            <i class="fa-brands fa-linkedin"></i> View LinkedIn Profile
+          </a>
+          <a href="#experience" class="btn-secondary">
+            Experience & Journey <i class="fa-solid fa-briefcase"></i>
+          </a>
+          <a href="#projects" class="btn-secondary">
+            Explore Works <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </section>
 
-  gtag('config', 'UA-23581568-13');
-</script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="0739c6dcd564e8d0897f3687-|49" defer=""></script></body>
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <div class="section-tag">01 / Profile & Focus</div>
+          <h2 class="section-title">Engineering at CrystaCode</h2>
+          <p class="section-desc">Building modern, intelligent web platforms, enterprise .NET backends, and AI-powered systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-visual">
+            <div class="avatar-wrapper">
+              <img src="https://avatars.githubusercontent.com/u/45947371?v=4" alt="Hamed Hajiloo" class="about-img" onerror="this.src='img/Profile_big.jpg'">
+              <div class="avatar-badge">
+                <i class="fa-solid fa-code"></i> CrystaCode Engineer
+              </div>
+            </div>
+          </div>
+
+          <div class="about-info">
+            <p>
+              I am a <strong>Senior Software Engineer at CrystaCode</strong> with extensive experience designing and deploying enterprise software, AI-driven solutions, and high-concurrency .NET systems.
+            </p>
+            <p>
+              At <strong>CrystaCode</strong>, I contribute to core application architecture, cutting-edge Full-Stack AI curricula, and next-generation developer tooling—combining modern Microsoft technologies, Semantic Kernel, and robust cloud services.
+            </p>
+
+            <div class="credentials-row">
+              <span class="credential-badge">
+                <i class="fa-solid fa-laptop-code"></i> CrystaCode Senior Engineer
+              </span>
+              <span class="credential-badge">
+                <i class="fa-solid fa-brain"></i> Full-Stack AI & .NET
+              </span>
+              <span class="credential-badge">
+                <i class="fa-solid fa-microphone"></i> TEDx Speaker
+              </span>
+              <span class="credential-badge">
+                <i class="fa-solid fa-code-branch"></i> Open Source Contributor
+              </span>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-box">
+                <div class="stat-number">8+ Years</div>
+                <div class="stat-label">Software Engineering</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">AI & .NET</div>
+                <div class="stat-label">Core Specialization</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Repositories & Tools</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Tech Stack -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <div class="section-tag">02 / Competencies</div>
+          <h2 class="section-title">Technical Expertise & Skills</h2>
+          <p class="section-desc">Core languages, enterprise frameworks, architectural paradigms, and cloud tooling.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Languages & Core</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">.NET Core / .NET 8 & 9</span>
+              <span class="tech-tag">ASP.NET Core Web API</span>
+              <span class="tech-tag">Blazor (Wasm & Server)</span>
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LINQ / Entity Framework Core</span>
+            </div>
+          </div>
+
+          <!-- Architecture & Design -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-sitemap"></i>
+              </div>
+              <h3>Architecture & Patterns</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">Domain-Driven Design (DDD)</span>
+              <span class="tech-tag">CQRS & MediatR</span>
+              <span class="tech-tag">Event Sourcing</span>
+              <span class="tech-tag">Microservices</span>
+              <span class="tech-tag">RESTful & gRPC APIs</span>
+              <span class="tech-tag">Repository & Unit of Work</span>
+            </div>
+          </div>
+
+          <!-- Databases & Caching -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3>Databases & Caching</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">Microsoft SQL Server</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis Cache</span>
+              <span class="tech-tag">EF Second Level Cache</span>
+              <span class="tech-tag">Dapper</span>
+              <span class="tech-tag">Database Indexing & Tuning</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Microsoft Azure</span>
+              <span class="tech-tag">CI/CD Pipelines</span>
+              <span class="tech-tag">Linux / Nginx</span>
+              <span class="tech-tag">Cloudflare</span>
+              <span class="tech-tag">Git / GitHub Actions</span>
+            </div>
+          </div>
+
+          <!-- Distributed & Real-Time -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3>Distributed & Real-Time</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">SignalR Core</span>
+              <span class="tech-tag">gRPC</span>
+              <span class="tech-tag">System.Threading.Channels</span>
+              <span class="tech-tag">Message Queues</span>
+              <span class="tech-tag">WebAudio & WebSockets</span>
+              <span class="tech-tag">Semantic Kernel (skUnit)</span>
+            </div>
+          </div>
+
+          <!-- Testing & Tooling -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <i class="fa-solid fa-vial-circle-check"></i>
+              </div>
+              <h3>Testing & Tooling</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tech-tag">xUnit / NUnit</span>
+              <span class="tech-tag">Playwright</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">Visual Studio / VS Code</span>
+              <span class="tech-tag">AutoMapper</span>
+              <span class="tech-tag">StructureMap / DI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & Companies Section -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <div class="section-tag">03 / Career Experience</div>
+          <h2 class="section-title">Companies & Roles</h2>
+          <p class="section-desc">Key milestones, leadership positions, and engineering impact across companies.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- CrystaCode -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-company-title">
+                  <span>CrystaCode</span>
+                  <span class="company-badge" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4; border-color: rgba(6, 182, 212, 0.4);">Featured Focus</span>
+                </div>
+                <div class="timeline-role">Senior Software Engineer & AI Systems Contributor</div>
+              </div>
+              <div class="timeline-period">2022 – Present</div>
+            </div>
+            <div class="timeline-body">
+              <p>Leading software engineering initiatives, enterprise architecture design, and developing full-stack AI applications and training curricula.</p>
+              <ul>
+                <li>Architected full-stack AI systems integrating OpenAI, Semantic Kernel, and .NET Core backends.</li>
+                <li>Developed core modules and educational blueprints for the <strong>Full-Stack AI Bootcamp</strong> ecosystem.</li>
+                <li>Engineered clean architecture, microservices patterns, and scalable REST/gRPC API backends for cross-platform clients.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- BitPlatform & Functionland -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-company-title">
+                  <span>BitFoundation (BitPlatform) & Functionland</span>
+                  <span class="company-badge">Open Source / Core Dev</span>
+                </div>
+                <div class="timeline-role">Core .NET & Blazor Engineer</div>
+              </div>
+              <div class="timeline-period">2021 – 2023</div>
+            </div>
+            <div class="timeline-body">
+              <p>Contributed to open-source developer ecosystems and decentralized technologies.</p>
+              <ul>
+                <li><strong>BitPlatform:</strong> Built high-performance Blazor UI components and WebAssembly app templates.</li>
+                <li><strong>Fx Files (Functionland):</strong> Developed decentralized file management systems integrating blockchain-based storage networks (Fula Bloxes).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- KhodroRadar & MelkRadar -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-company-title">
+                  <span>KhodroRadar &bull; MelkRadar</span>
+                  <span class="company-badge">Co-Founder / Tech Lead</span>
+                </div>
+                <div class="timeline-role">Co-Founder & Technical Architect</div>
+              </div>
+              <div class="timeline-period">2021 – 2024</div>
+            </div>
+            <div class="timeline-body">
+              <p>Designed high-throughput web scraping architectures, database indexing pipelines, and real-time alert engines.</p>
+              <ul>
+                <li>Built automated data extraction and indexing pipelines processing millions of daily records.</li>
+                <li>Optimized SQL Server and Redis caching tiers for sub-second query latency during peak load.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Jabiz Parda, Sepehran Sarmad & Daric -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-company-title">
+                  <span>Jabiz Parda &bull; Sepehran Sarmad &bull; Daric</span>
+                  <span class="company-badge">Software Engineer</span>
+                </div>
+                <div class="timeline-role">Software Developer / .NET Specialist</div>
+              </div>
+              <div class="timeline-period">2018 – 2021</div>
+            </div>
+            <div class="timeline-body">
+              <p>Engineered multi-layer web architectures, financial integrations, and enterprise database systems.</p>
+              <ul>
+                <li>Built robust ASP.NET MVC and Web API services with Entity Framework, JWT authentication, and SQL Server.</li>
+                <li>Developed custom payment gateway modules, automated billing systems, and inventory tracking tools.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <div class="section-tag">04 / Portfolio & Open Source</div>
+          <h2 class="section-title">Selected Projects & Repositories</h2>
+          <p class="section-desc">Commercial enterprise systems, AI frameworks, and specialized developer libraries.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- CrystaCode Full-Stack AI Bootcamp -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-card-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="tech-tag">AI / .NET</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CrystaCode AI Bootcamp</h3>
+              <p class="project-desc">
+                Comprehensive AI system architectures combining LLMs, Semantic Kernel, and modern full-stack development patterns.
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">CrystaCode</span>
+                <a href="https://github.com/CrystaCode/full-stack-ai-bootcamp" target="_blank" rel="noopener noreferrer" class="project-link">
+                  GitHub Repo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- BitPlatform & Blazor -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-card-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; border-color: rgba(99, 102, 241, 0.3);">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <span class="tech-tag">Blazor / Wasm</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">BitPlatform & Blazor Tools</h3>
+              <p class="project-desc">
+                Contributions to modern .NET Blazor app frameworks, WebAssembly tools, and high-performance UI components (`bitplatform`, `MatBlazor`).
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">1.4k ★</span>
+                <a href="https://github.com/bitfoundation/bitplatform" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Explore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fx Files (Functionland) -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-card-icon" style="background: rgba(52, 211, 153, 0.15); color: #34d399; border-color: rgba(52, 211, 153, 0.3);">
+                <i class="fa-solid fa-folder-tree"></i>
+              </div>
+              <span class="tech-tag">Blockchain / Storage</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fx Files (Functionland)</h3>
+              <p class="project-desc">
+                Decentralized blockchain file manager application designed for self-sovereign private cloud storage over the Fula Network.
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">C# Backend</span>
+                <a href="https://github.com/functionland/fx-files" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Explore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI & Semantic Kernel Tools -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-card-icon" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; border-color: rgba(244, 63, 94, 0.3);">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <span class="tech-tag">Semantic Kernel</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">skUnit & AI Tooling</h3>
+              <p class="project-desc">
+                Testing libraries for Semantic Kernel units, plugin functions, automated daily AI report generators, and AI pipeline experiments.
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">Open Source</span>
+                <a href="https://github.com/hamedhajiloo/skunit" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Explore <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pakatt -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="img/pakatt.jpg" alt="Pakatt Platform">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pakatt</h3>
+              <p class="project-desc">
+                Enterprise logistics and e-commerce platform built on robust ASP.NET architectures with high-volume database operations and secure payment flows.
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">ASP.NET / SQL</span>
+                <a href="https://www.pakatt.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit Platform <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pooshako -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="img/pooshako.png" alt="Pooshako Platform">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pooshako</h3>
+              <p class="project-desc">
+                Digital commerce and catalog platform engineered for fast product search, inventory synchronization, and resilient order handling.
+              </p>
+              <div class="project-footer">
+                <span class="project-badge-tag">Web API / MVC</span>
+                <a href="https://www.pooshako.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Visit Platform <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="contact-container">
+          <div class="section-tag">05 / Connect & Collaborate</div>
+          <h2 class="section-title">Let's Get in Touch</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Feel free to connect on LinkedIn, explore my GitHub repositories, or reach out directly for technical discussions and engineering opportunities.
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://www.linkedin.com/in/hamedhajiloo/" target="_blank" rel="noopener noreferrer" class="social-btn" style="border-color: rgba(10, 102, 194, 0.4); background: rgba(10, 102, 194, 0.1);">
+              <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i> LinkedIn
+            </a>
+            <a href="https://github.com/hamedhajiloo" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://twitter.com/HamedHajiloo96" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-x-twitter"></i> Twitter / X
+            </a>
+            <a href="https://t.me/HamedHajiloo96" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+            <a href="https://instagram.com/hamedhajiloo96" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Hamed Hajiloo &bull; .NET Tech Lead & Co-Founder &bull; Designed with 3D WebGL & Modern Frontend Standards</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Three.js Interactive Scene -->
+  <script src="js/three-scene.js"></script>
+
+</body>
+</html>
+            </a>
+            <a href="https://twitter.com/HamedHajiloo96" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-x-twitter"></i> Twitter / X
+            </a>
+            <a href="https://t.me/prog_ram_mer" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+            <a href="https://instagram.com/hamedhajiloo96" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Hamed Hajiloo. Crafted with modern 3D WebGL & high-performance frontend standards.</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Three.js Interactive Scene -->
+  <script src="js/three-scene.js"></script>
+
+</body>
 </html>
