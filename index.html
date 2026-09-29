@@ -39,7 +39,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="javascript:void(0)" onclick="toggleCodeaModal()">Codea AI</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -79,11 +78,11 @@
           <a href="https://www.linkedin.com/in/hamedhajiloo/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background: linear-gradient(135deg, #0a66c2 0%, #0077b5 100%);">
             <i class="fa-brands fa-linkedin"></i> View LinkedIn Profile
           </a>
-          <button onclick="toggleCodeaModal()" class="btn-primary" style="cursor: pointer; border: none;">
-            <i class="fa-solid fa-robot"></i> Ask Codea AI
-          </button>
           <a href="#experience" class="btn-secondary">
             Experience & Journey <i class="fa-solid fa-briefcase"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            Get in Touch <i class="fa-solid fa-paper-plane"></i>
           </a>
         </div>
       </section>
@@ -404,67 +403,22 @@
 
   </div>
 
-  <!-- Floating Codea AI Trigger Button -->
-  <button id="codea-float-trigger" class="codea-float-trigger" onclick="toggleCodeaModal()" title="Ask Codea AI Assistant" aria-label="Open Codea AI chat">
-    <i class="fa-solid fa-robot"></i>
-    <span>Ask Codea AI</span>
-    <span class="pulse-circle"></span>
-  </button>
-
-  <!-- Floating Glassmorphic Codea AI Modal Window -->
-  <div id="codea-modal-window" class="codea-modal-window" role="dialog" aria-modal="true" aria-label="Codea AI Chat Assistant">
-    <div class="codea-window-header">
-      <div class="window-dots">
-        <span class="dot dot-red"></span>
-        <span class="dot dot-yellow"></span>
-        <span class="dot dot-green"></span>
-      </div>
-      <div class="window-title">
-        <i class="fa-solid fa-robot"></i>
-        <span>Codea &bull; CrystaCode AI</span>
-      </div>
-      <div class="window-controls">
-        <div class="window-badge">
-          <span class="pulse-circle"></span> Live
-        </div>
-        <a href="https://crystacode.ai/agent-for-iframe?agentId=399045c5-56c7-4b55-943f-128cb64e63a4" target="_blank" rel="noopener noreferrer" class="codea-popout-btn" title="Open in new tab" aria-label="Open in new tab">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <button class="codea-close-btn" onclick="toggleCodeaModal(false)" aria-label="Close chat window">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-    </div>
-    <div class="codea-iframe-wrapper">
-      <iframe src="https://crystacode.ai/agent-for-iframe?agentId=399045c5-56c7-4b55-943f-128cb64e63a4" allow="microphone *; camera *; autoplay *; clipboard-write *; encrypted-media *; fullscreen *" allowtransparency="true"></iframe>
-    </div>
-  </div>
+  <!-- CrystaCode Codea AI Agent Direct Iframe -->
+  <iframe src="https://crystacode.ai/agent-for-iframe?agentId=399045c5-56c7-4b55-943f-128cb64e63a4" allow="microphone *; camera *; autoplay *; clipboard-write *; encrypted-media *; fullscreen *" allowtransparency="true" style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 0;
+    height: 800px;
+    width: 600px;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 9999;"></iframe>
 
   <!-- Scripts -->
   <!-- Three.js from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <!-- Three.js Interactive Scene -->
   <script src="js/three-scene.js"></script>
-
-  <!-- Codea Modal Toggle Script -->
-  <script>
-    function toggleCodeaModal(forceState) {
-      const modal = document.getElementById('codea-modal-window');
-      if (!modal) return;
-      if (typeof forceState === 'boolean') {
-        modal.classList.toggle('open', forceState);
-      } else {
-        modal.classList.toggle('open');
-      }
-    }
-
-    // Close on Escape key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        toggleCodeaModal(false);
-      }
-    });
-  </script>
 
 </body>
 </html>
